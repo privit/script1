@@ -25,3 +25,15 @@ git remote add script https://github.com/privit/script1.git
 
 b)git remote kontroll
 git remote -v
+
+
+põhikasutamine:
+
+a)pane faili järgmisele:
+git add failinimi
+
+b)lisa kirjeldus muudatuse kohta
+git commit -m "lühikirjelduse text"
+
+c)lisa kaugrepositooriumi
+git push -uf script master
