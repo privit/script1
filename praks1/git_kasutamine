@@ -16,3 +16,12 @@ cd script
 
 d) tekita lokaalne repositoorium git süstemi jaoks antud kaustas
 git init
+
+
+remote seadistamine:
+
+a) git remote add nimi adress
+git remote add script https://github.com/privit/script1.git
+
+b)git remote kontroll
+git remote -v
