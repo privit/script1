@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#yl2
+#
+echo -n "Priit Toome" #minu nimi
+echo -n "IS-117" #mu õppegrupp
+echo -n "lõppuks olen asjadega järgi jõudnud...... oli palju probleeme erroritega... kõige rohkem häirib, et ei tea. siiani MIS täpselt probleemiks oli."  # text
