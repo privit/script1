@@ -5,3 +5,9 @@
 echo -n "Priit Toome" #minu nimi
 echo -n "IS-117" #mu õppegrupp
 echo -n "lõppuks olen asjadega järgi jõudnud...... oli palju probleeme erroritega... kõige rohkem häirib, et ei tea. siiani MIS täpselt probleemiks oli."  # text
+echo -n "aga positiivne on et  täna sujusid asjad"
+echo  "!"
+##
+#
+#script lõpp
+#
