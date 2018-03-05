@@ -3,7 +3,8 @@
 #tervitusskript
 #
 echo -n "Tere, " #väljasta ilma reavaheta Tere,
-echo -n "User" #väljasta ilma reavaheta User
+echo -n `who am i | cut -c1| tr [:lower:] [:upper:]` #lõika nime esiment täht ja muuda see suureks
+echo -n `who am i | cut -c2-`  # lõika kõik alates teiset töhest
 echo "!" # väljasta ! ja tee reavahetus
 #
 #skripti lõpp
