@@ -2,9 +2,9 @@
 #
 #tervitus script, nime küsimisega
 #
-echo  "Tere,kellega ma räägin???	 " #küsimus
-read varname
-echo Tere tulemast $varname
+echo  "Sisetqa oma ees- ja perekonnanimi: " #küsimus
+read eesnimi perekonnanimi
+echo Sinu eesnimi on $eesnimi ja perekonnanimi on $perekonnanimi
 #
 #
 #script end
