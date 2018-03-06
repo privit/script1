@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#tervitus script, nime küsimisega
+#
+echo  "Tere,kellega ma räägin???	 " #küsimus
+read varname
+echo Tere tulemast $varname
+#
+#
+#script end
+
