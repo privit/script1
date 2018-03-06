@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#kolmnurga arvutus script
+#
+#
+echo "Siseta  kolmnutaga 1.külje pikkus!"
+read a
+echo "Siseta teine kolmnurga külja pikkus!"
+read b
+
+######hypr=`echo " $a \* $a +  $b \* $b" |bc -l` #arvutab ruutude summa
+
+a2=`echo "scale=2;($a^2)" |bc -l`
+b2=`echo "scale=2;($b^2)" |bc -l`
+a2b2=`echo "scale=2;($a2 + $b2)" |bc -l`
+hyp=`echo "scale=2; sqrt ($a2b2)" | bc -l` #leiab hypotenuusi
+echo "kolmnurga hüpotenuus (c) on " $hyp #väljastab lõppväärtiuse
+
+##script end
