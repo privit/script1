@@ -1,0 +1,10 @@
+#!/bin/bash
+
+date +"Today is %A, %B %m, %Y " #se comand on täisesõnaLISE PÄEVA,KUU JA AASTA
+
+
+date +"Time is %R"
+echo ""
+#date "time is %H:%M"
+
+cal # see comand postitab kalendri
