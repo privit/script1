@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#kolmnurga pindala arvutus script
+#
+#
+echo "Siseta  kolmnutaga väärtus a"
+read a
+echo "Siseta kolmnurga väärtus b"
+read b
+echo "Sisesta kolmnurga väärtus c"
+read c
+######hypr=`echo " $a \* $a +  $b \* $b" |bc -l` #arvutab ruutude summa
+
+abc2=`echo "scale=2;($a+$b+$c) / 2" |bc -l`
+echo "külgede pikkus jagatud 2 on" $abc2
+
+pind=`echo "scale=2; sqrt ($abc2 * ($abc2 - $a) * ($abc2 - $b) * ($abc2 - $c)) " | bc -l` #leiab hypotenuusi
+echo "kolmnurga pindala on " $pind #väljastab lõppväärtiuse
+
+##script end
