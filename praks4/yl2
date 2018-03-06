@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+#küpsisie tordi script
+
+#
+echo  "Siseta soovitud küpsisetordi pikkus ,(eraldajaks tühik) laius: " #
+read pikkus laius
+kandik=`expr $pikkus \* $laius `
+echo $kandik
+#
+#
+echo "MIs on küpsise mõõtmed (cm) X*X (nr eraldaja tühik) ?"
+read kl kp
+kupsis=`expr $kl \* $kp`
+echo küpsise pindala $kupsis
+#
+#
+echo "Siseta küpsiste arv pakkis:"
+read kups_arv
+#
+echo "Mitmekihiline on planeeritud tort?"
+read  kiht
+pakkide_arv=`expr $kandik / $kupsis \* $kiht / $kups_arv`
+echo -n vaja läheb   $pakkide_arv
+echo  "pakki." 
+echo
+#palju küpsisit mahub kandikule ühes kihis
+
+#
+#script end
+
