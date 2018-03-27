@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#
+#
+echo -n "sisieta kuu NR! " 
+read  K
+if [ $K -le 2 -o $K -eq 12 ]; then
+echo "Hetkel talv"
+else
+	if [ $K -ge 3 -a $K -le 5 ]; then
+echo "	praegu on kevad!"
+else
+	if [ $K -ge 6 -a $K -le 8 ]; then
+echo "SUVI!!!!!!!!!SUVI!!!!!!!"
+else
+	if [ $K -ge 7 -a $K -le 11 ]; then
+echo "Jälle on sügis!!"
+fi
+fi
+fi
+fi
