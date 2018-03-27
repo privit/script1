@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#
+#
+echo -n "siseta vanus! " 
+read V
+if [ $V -le 11 ]; then
+echo "oled laps"
+else
+	if [ $V -ge 11 -a $V -le 18 ]; then
+echo "oled tiinekas!!"
+else
+	if [ $V -ge 18 -a $V -le 63 ]; then
+echo "oled täiskasvanu!!"
+else
+	if [ $V -ge 63 ]; then
+echo "oled vanur!!"
+fi
+fi
+fi
+fi
