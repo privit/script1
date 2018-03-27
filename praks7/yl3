@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+#
+echo -n "siseta kella aeg! "#
+read kell
+###kell=`date | cut -c12-13`
+#
+if [ $kell -ge 6 -a $kell -lt 12 ]; then
+echo "tere hommikust, "
+elif [ $kell -ge 12 -a $kell -lt 18 ]; then
+echo "tere päevast, "
+elif [ $kell -ge 18 $kell -lt 22 ]; then
+echo "tereõhtust, "
+
+elif [ $kell -ge 22 -a $kell -lt 24 ]; then
+echo "headööd"
+elif [ $kell -ge 0 -a $kell -lt 6 ]; then
+echo "head öööd, "
+else
+ehco "vigane sisestus!!!!"
+
+
+fi
+##echo
+##echo -n "$tervitus"
+##echo -n `who am i| cut -f1 -d "." |cut -c1 |tr [:lower:][:upper:]`
+##echo -n `who am i | cut -f1 -d "."| cut -c2-
+##echo "!"
+###
