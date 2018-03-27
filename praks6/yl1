@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#script paaris või paaritu arv
+echo -n "sisesta minigi täisarv: "
+read arv
+j22k=$(( $arv % 2)) ##kui jaak on 0 on tegu paariarvuga
+if [ $j22k -eq 0 ]; then
+echo "Arv on paaariarv"
+else
+echo "Arv on paaritu"
+fi #if lause lõpp
+#script lopp
