@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#
+echo -n "sisesta reisijate arv: "
+read  RA
+echo -n "sisiesta kohtadfe arv bussis: "
+read IB
+BA=$(( $RA / $IB )) #buside arv
+eimaht=$(( $RA % $IB ))
+
+
+if [ $eimaht -gt 0 ]; then
+BA=$(($BA + 1))
+
+fi
+echo "Kokku on vaja $BA bussi"
+
+#script lopp
