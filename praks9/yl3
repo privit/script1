@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+#
+echo  "siseta mitu  rida sümbloeid; "
+read a1
+echo "sisesta mitu sümbolit reas, "
+#
+read a2
+for (( i=1; i<=$a1; i++ ))  ####outer loop
+do echo -n "$i" 
+if  [ $i -eq 1 -o $i -eq $a1 ]; then
+
+	for (( j=1 ; j<=$a2; j++ )) ##inner loop
+do
+echo -n "* "
+done
+
+
+else
+echo -n "* "
+ 
+for (( j=2 ; j<$a2 ; j++ ))
+do
+
+
+echo -n "  "
+
+done
+echo -n "* "
+fi
+echo
+done
