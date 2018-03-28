@@ -1,0 +1,8 @@
+#/bin/bash
+#
+#
+#
+tulem=$(( 2 + 4+ 6 + 8 +10 ))
+echo "arvutus tulem 2+4+6+8+10+on $tulem" 
+
+
