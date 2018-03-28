@@ -1,10 +1,14 @@
 #!/bin/bash
 #
 #
+echo  "siseta mitu  rida sümbloeid; "
+read a1
+echo "sisesta mitu sümbolit reas, "
 #
-for (( i=1; i<=5; i++ ))  ####outer loop
+read a2
+for (( i=1; i<=$a1; i++ ))  ####outer loop
 do echo -n $i 
-	for (( j=1 ; j<=3; j++ )) ##inner loop
+	for (( j=1 ; j<=$a2; j++ )) ##inner loop
 do
 echo -n "* "
 done 
