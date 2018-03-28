@@ -1,8 +1,25 @@
-#/bin/bash
+#!/bin/bash
 #
 #
 #
-tulem=$(( 2 + 4+ 6 + 8 +10 ))
-echo "arvutus tulem 2+4+6+8+10+on $tulem" 
+#woreach tsõkliga
+
+#nimekiri muutujatest
+arvud="1 2 3 4 5 6 7 8 9 10"
+#loome tuleva suuma
+# väljasta arvud
+
+summa=0
+for arv in $arvud
+do
+if [ $(($arv % 2)) -eq 0 ]; then
+summa=$(($summa + $arv))
+echo $summa
+#echo $arv
+fi
+done
+
+
+###echo "arvutus tulem 2+4+6+8+10+on $tulem" 
 
 
