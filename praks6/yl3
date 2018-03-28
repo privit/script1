@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#script paaris või paaritu arv
+if test $# -ne 1;
+then
+
+	echo "Kasutmise seletus: "
+	echo "$0 täisarv"
+else
+JAAK=$(($1 % 2))
+#tinginus - kui jääk on null - arv paaris
+
+if test $JAAK -eq 0
+then
+
+echo "Arv on paaariarv"
+else
+echo "Arv on paaritu"
+fi #if lause lõpp
+#script lopp
+fi
