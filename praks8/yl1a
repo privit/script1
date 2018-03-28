@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+#
+#
+#for tsükliga
+
+
+#loome tuleva suuma
+# väljasta arvud
+
+summa=0
+for arv=1 arv<=10 ; arv++))
+do
+if [ $(($arv % 2)) -eq 0 ]; then
+summa=$(($summa + $arv))
+echo $summa
+#echo $arv
+fi
+done
+
+
+###echo "arvutus tulem 2+4+6+8+10+on $tulem" 
+
+
