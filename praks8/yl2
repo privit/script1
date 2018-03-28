@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+#
+#
+#for tsükliga
+
+
+#
+echo sisieta täis arv
+read  nr
+#kui neg arv koruta -1ga
+if [ $nr -lt 0 ]; then
+nr=$(($nr * -1))
+fi
+summa=0
+while [ $nr -gt 0 ]
+do
+arv=$(($nr % 10))
+nr=$(($nr / 10))
+summa=$(($summa + $arv))
+
+
+###if [ $(($arv % 2)) -eq 0 ]; then
+####summa=$(($summa + $arv))
+
+#echo $arv
+##fi
+done
+
+echo "täisarvu tegurite summa on $summa"
+###echo "arvutus tulem 2+4+6+8+10+on $tulem" 
+
+
