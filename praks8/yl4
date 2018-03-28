@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+#algarvu tuvastus
+#
+echo -n "Sisesta suvaline positiivne täisarv: "
+read arv
+#kontrolli kas arv on negatiivne
+if [ $arv -lt 0 ]; then
+echo "sisestatud $arv on NEGATIIVNE" 
+exit 1
+#script exit status väärtus
+else
+#kui arv on 0 v1
+	if  [ $arv -eq 0 -o $arv -eq 1 ] ; then
+	echo "arv ei ole algarv!!"
+	exit 1
+else
+
+	jagaja=2
+	while [ $(($arv % $jagaja)) -ne 0 ]
+	do
+	jagaja=$(($jagaja + 1 ))
+done
+		if [ $arv -eq $jagaja ]; then
+ 		# kontrolli kas $arv on võrdne $jagajaga
+		echo "$arv on algarv"
+exit 0
+	else
+		echo "$arv ei ole algarv"
+	exit 1
+		fi
+	fi
+fi
+
